@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="start"> 
+            <h1 class="title"> 🥳🥳 Meta quizz 😀😀</h1>
+           <button class="btnPlay">  Commencer  </button>
+        </div>
+
+        <div class="question_board" style="display: none;">
+            <div class="question"></div>
+            <div class="qImg"></div>
+            <div class="choices">
+            <div class="choice" id="choiceA" onclick="checkAnswer('A')"></div>
+            <div class="choice" id="choiceB" onclick="checkAnswer('B')"></div>
+            <div class="choice" id="choiceC" onclick="checkAnswer('C')"></div>
+            <div class="choice" id="choiceD" onclick="checkAnswer('D')"></div>
+            </div>
+            
+            <div class="progress"></div>
+            <div class="timer">
+            <div class="count"> </div>
+            <div class="ptimeGauge"> </div>
+            <div class="etimeGauge"> </div>
+            </div>
+            
+        </div>
+        <div class="score_container" style="display: none;">
+            <button class="" onclick="window.location.reload()"> Rejouer </button>
+        </div>
+    
+    </div>
+    <script src="question.js">
+
+    </script>
+<script src="app.js"></script>
+</body>
+</html>
